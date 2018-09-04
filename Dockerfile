@@ -8,5 +8,4 @@ RUN cd /opt/selfsteem/ \
     && npm install \
     && npm run build
 CMD cd /opt/selfsteem/build \
-    && service cron start \
     && http-server & tail -f /var/log/*
